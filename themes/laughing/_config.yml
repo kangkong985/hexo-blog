@@ -31,7 +31,7 @@ social:
     link: https://www.zhihu.com/people/woody-huang
   - name: Email
     icon: email
-    link: woodyhuang1@gmail.com
+    link: mailto:woodyhuang1@gmail.com
 # Duoshuo
 duoshuo:
   enable: false
