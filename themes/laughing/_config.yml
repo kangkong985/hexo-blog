@@ -1,0 +1,49 @@
+# Icon
+favicon: /favicon.ico
+# SEO
+keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
+# Header
+page_background: https://i.loli.net/2018/11/05/5bdfeccbb2696.jpg
+page_menu_button: dark
+post_background: https://i.loli.net/2018/11/05/5bdfeccbb2696.jpg
+post_menu_button: light
+title_plancehold: 随笔
+author:
+  head: https://i.loli.net/2018/11/05/5bdfe65918658.jpg
+  signature: 晚来天欲雪，能饮一杯无？
+navication:
+  - name: Github
+    link: https://github.com/huangy10
+  - name: Zhihu
+    link: https://www.zhihu.com/people/woody-huang
+  - name: RSS
+    link: /atom.xml
+# content
+content_width: 800
+# Footer
+## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus, douban, bilibili]
+social:
+  - name: Github
+    icon: github
+    link: https://github.com/huangy10
+  - name: Zhihu
+    icon: zhihu
+    link: https://www.zhihu.com/people/woody-huang
+  - name: Email
+    icon: email
+    link: woodyhuang1@gmail.com
+# Duoshuo
+duoshuo:
+  enable: false
+  siteName: ueibo
+
+valine:
+  enable: true
+  apiId: 'RgU04qWdIGkeB7eiYx9YQY3t-gzGzoHsz'
+  appKey: 'AS3K6j6BeyTG3eyS3CYvjLKe'
+
+# Copyright
+copyright:
+  record: false
+  hexo: true
+  laughing: true
