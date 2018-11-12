@@ -35,7 +35,7 @@ block content
           (document.getElementsByTagName('head')[0] 
           || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
-  else
+  else if theme.valine.enable
     #vcomments(style='max-width:'+ theme.content_width +'px', class="article-comment")
   ul.navication
     li.home
