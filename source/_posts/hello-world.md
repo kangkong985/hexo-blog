@@ -35,5 +35,5 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ``` bash
 $ hexo deploy
 ```
-
+前面的文字{% minio 'default' 'Dedicated Short-Range Communications (DSRC) Standards in the United States.pdf' %}下载链接{% endminio %}后面的文字
 More info: [Deployment](https://hexo.io/docs/deployment.html)
