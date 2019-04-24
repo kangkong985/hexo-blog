@@ -7,8 +7,9 @@ tags:
   - ss
 categories:
   - 教程
+# mathjax: true
 ---
-
+<!--more-->
 ## Haproxy
 
 [Haproxy is a reliable, high performance TCP/HTTP Load Balancer](http://www.haproxy.org/)
@@ -32,3 +33,7 @@ cd haproxy-1.7.2
 make TARGET=linux2626 USE_GETADDRINFO=1
 sudo make install
 ```
+
+<!-- \begin{equation*}
+x = \sum_{i=1}^{N}x^2
+\end{equation*} -->
