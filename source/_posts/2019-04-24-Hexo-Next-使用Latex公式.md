@@ -27,7 +27,6 @@ Next支持`mathjax`和`katex`两种渲染方式，其中`katex`的速度更快�
 - `hexo-render-pandoc`
 
 {% note info %}
-
 使用`hexo-render-pandoc`还需要安装pandoc渲染引擎。其安装方法可以参考
 [pandoc官网](http://pandoc.org/installing.html)。如果在macOS上可以使用
 [Homebrew](https://brew.sh/)安装.
@@ -43,6 +42,7 @@ npm i hexo-renderer-pandoc --save
 
 {% note danger %}
 替换渲染器之后会导致NexT note功能出现问题，note内的元素内容无法渲染，会输出markdown源代码。
+这个问题我在`hexo-render-pandoc`上提了一个[Issue](https://github.com/wzpan/hexo-renderer-pandoc/issues/33)，看原作者什么时候能够更新解决吧。
 {% endnote %}
 
 ## 2. Configuration
