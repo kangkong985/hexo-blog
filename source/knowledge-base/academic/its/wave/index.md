@@ -2,6 +2,7 @@
 title: Wireless Access in Vehicular Environments (WAVE)
 date: 2019-04-29 11:28:41
 mathjax: true
+bibliography: ./reference.bib
 ---
 
 WAVE的全称是Wireless Access in Vehicular Environment，是目前车联网通信的标准。
@@ -116,7 +117,7 @@ RTS/CTS的工作过程如下。节点在发送数据包之前，先向目标节�
 针对MAC的层的性能推导，基本源自于下面这篇文章（接近一万次引用）
 
 {% note info %}
-[Performance analysis of the IEEE 802.11 distributed coordination function](https://ieeexplore.ieee.org/abstract/document/840210)
+[Performance analysis of the IEEE 802.11 distributed coordination function](https://ieeexplore.ieee.org/abstract/document/840210)[@bianchi2000performance]
 {% endnote %}
 
 上面这篇文章给出了在一定的驾驶条件下DCF机制的饱和吞吐率
@@ -315,3 +316,7 @@ $$
 ![饱和吞吐率与节点数量的关系](https://gitlab.vlionthu.com/mixed-autonomy/advanced-tdma-ns3-simulation/uploads/419e1e0df6b65ff0cebbc7b3f7f1b9a1/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7_2019-04-30_22.59.10.png)
 
 从上图中我们可以发现，对于Basic Access方式，饱和吞吐率和节点数量呈负相关，也即和节点密度呈负相关。这意味着节点数量越少，饱和吞吐率越高。相反，对于RTS/CTS机制而言，在节点密度达到一定的程度以后，饱和吞吐率就和节点数量无关了。
+
+{% note info %}
+这个性能差异我们在[IEEE802.11 DCF中Basic Access和RTS/CTS机制的理论饱和吞吐率性能差异分析](./performance-of-bas-and-rts.html)这篇文章中进行了详细的分析。
+{% endnote %}
