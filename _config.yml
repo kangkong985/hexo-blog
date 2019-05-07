@@ -91,3 +91,14 @@ feed:
 #   field: post
 #   format: html
 #   limit: 10000
+
+pandoc:
+  extra:
+    - bibliography: ./source/_reference.bib
+    - csl: ./source/_IEEEtran.cls
+  filters:
+    - pandoc-crossref
+    - pandoc-citeproc
+  # meta:
+  #   - link-citations
+    # - suppress-bibliography

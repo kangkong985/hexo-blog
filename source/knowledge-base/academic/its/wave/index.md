@@ -114,13 +114,8 @@ RTS/CTS的工作过程如下。节点在发送数据包之前，先向目标节�
 
 ## MAC层性能的理论推导
 
-针对MAC的层的性能推导，基本源自于下面这篇文章（接近一万次引用）
-
-{% note info %}
-[Performance analysis of the IEEE 802.11 distributed coordination function](https://ieeexplore.ieee.org/abstract/document/840210)[@bianchi2000performance]
-{% endnote %}
-
-上面这篇文章给出了在一定的驾驶条件下DCF机制的饱和吞吐率
+针对MAC的层的性能推导，基本源自于下面[Performance analysis of the IEEE 802.11 distributed coordination function](https://ieeexplore.ieee.org/abstract/document/840210)[@bianchi2000performance].
+这篇文章给出了在一定的驾驶条件下DCF机制的饱和吞吐率
 
 ### 饱和吞吐率
 
@@ -311,6 +306,10 @@ T_c^{rts} = RTS + DIFS + \delta
 \right.
 $$
 
+### 对于Beacon包的特殊分析
+
+很多文献中对于Beacon包的发送过程做了简化，即发送过程中只进行一轮退避，没有退避窗口的指数增长过程。此时Beacon包的发送状态成为一维马尔科夫过程。这部分问题参见：[WAVE标准中的Beacon性能简化分析](./performance-analysis-of-beacon.html)
+
 ### 结果分析
 
 ![饱和吞吐率与节点数量的关系](https://gitlab.vlionthu.com/mixed-autonomy/advanced-tdma-ns3-simulation/uploads/419e1e0df6b65ff0cebbc7b3f7f1b9a1/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7_2019-04-30_22.59.10.png)
@@ -320,3 +319,5 @@ $$
 {% note info %}
 这个性能差异我们在[IEEE802.11 DCF中Basic Access和RTS/CTS机制的理论饱和吞吐率性能差异分析](./performance-of-bas-and-rts.html)这篇文章中进行了详细的分析。
 {% endnote %}
+
+# Reference
