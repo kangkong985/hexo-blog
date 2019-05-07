@@ -1,8 +1,6 @@
 ---
 title: 知识库🛠
 date: 2019-04-29 11:10:41
-categories:
-  - 知识库
 ---
 
 我希望用我的博客能够整理出一些呈体系话的知识库体系。这个页面是这个知识库的入口。以下是目录。注意因为知识还在不断的完善中，所以这些页面也是经常地处于WIP状态。这里的文章除了我自己撰写/翻译的内容外，还会转载一些优秀的博文。
@@ -17,6 +15,9 @@ categories:
 
 - [智能交通系统](./academic/its)
 
-## History
+## [History](./history)
 
-## Science
+- [中国近现代史部分的史料](/knowledge-base/history/中国史/近代史/)
+- [中国中古代部分的史料](/knowledge-base/history/中国史/中古史)
+
+## [Science](./science)
