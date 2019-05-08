@@ -11,6 +11,12 @@ date: 2019-04-29 11:10:41
 
 ## Programming
 
+### How to install
+
+这里给出了多种软件的安装方法
+
+- [python](/knowledge-base/programming/how-to-install/python.html)
+
 ## Academic
 
 - [智能交通系统](./academic/its)
