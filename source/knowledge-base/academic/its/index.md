@@ -4,5 +4,6 @@ date: 2019-04-29 11:22:41
 ---
 [智能交通系统](https://zh.wikipedia.org/wiki/%E6%99%BA%E6%85%A7%E5%9E%8B%E9%81%8B%E8%BC%B8%E7%B3%BB%E7%B5%B1)是将先进的信息技术、通讯技术、传感技术、控制技术及计算机技术等有效率地集成运用于整个交通运输管理体系，而创建起的一种在大范围内及全方位发挥作用的，实时、准确及高效率的综合的运输和管理系统。美国、日本、欧洲率先展开相应的研究并成为ITS发展的三强，此外加拿大、中国、韩国、新加坡、澳大利亚等国家的研究也具有相当规模。
 
-- 现有的智能交通系统通信标准
-    - [WAVE(Wireless Access in Vehicular Environments)](./wave)
+# 现有的智能交通系统通信标准
+
+- [WAVE(Wireless Access in Vehicular Environments)](./wave)
