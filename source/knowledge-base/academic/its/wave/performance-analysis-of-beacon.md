@@ -34,7 +34,11 @@ mathjax: true
 
 \begin{equation}
 \label{P}
-P(l, n, w, k)=\left(1-\frac{l-1}{w}\right)^{n} \cdot \left( \begin{array}{c}{n} \\ {k}\end{array}\right)\left(\frac{1}{w-l+1}\right)^{k}\left(1-\frac{1}{w-l+1}\right)^{n-k}
+\begin{aligned}
+P(l, n, w, k)&=\left(1-\frac{l-1}{w}\right)^{n} \cdot \left( \begin{array}{c}{n} \\ {k}\end{array}\right)\left(\frac{1}{w-l+1}\right)^{k}\left(1-\frac{1}{w-l+1}\right)^{n-k} \\
+&= \left( \begin{array}{c}{n} \\ {k}\end{array}\right) \cdot \frac{(w-l)^{n-k}}{w^n} \\
+&= \left( \begin{array}{c}{n} \\ {k}\end{array}\right) \cdot \left(1 - \frac{l}{w}\right)^{n-k} \cdot \frac{1}{w^{k}}.
+\end{aligned}
 \end{equation}
 
 考虑到Backoff Counter的最大值是$w$，完成所有Beacon包传输需要的平均时间为
