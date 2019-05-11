@@ -4,7 +4,7 @@ abbrlink: 12489
 date: 2019-04-13 16:47:20
 tags:
   - 教程
-  - ss
+  - Shadowsocks
 categories:
   - 教程
 # mathjax: true
