@@ -42,7 +42,7 @@ docker container start minio
 
 ![登录界面](https://imgs.codewoody.com/uploads/big/fa25ef81a937d5b26195632cf8aff37a.png)
 
-而后你可以按照[Lychee图床教程](/posts/65048/)中的做法，添加Nginx反向代理和HTTPS支持。
+而后你可以按照[Lychee图床教程](/posts/65048/)中的做法，添加Nginx反向代理和HTTPS支持。
 
 ## 2. Hexo中使用
 
@@ -97,7 +97,7 @@ npm install --save minio
 {% endminio %}
 ```
 
-在使用Hexo进行静态页面渲染时，这部分内容会被自动渲染成下载链接：
+在使用Hexo进行静态页面渲染时，这部分内容会被自动渲染成下载链接：
 
 ```
 <a target="_blank" href="download_url">下载链接</a>

@@ -19,7 +19,7 @@ date: 2019-04-29 11:10:41
 
 ## Academic
 
-- [智能交通系统](./academic/its)
+- [智能交通系统](./academic/its)
 
 ## [History](./history)
 

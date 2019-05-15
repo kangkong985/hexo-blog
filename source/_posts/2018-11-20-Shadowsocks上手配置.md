@@ -13,13 +13,13 @@ Shadowsocks配置的一个非常便利之处在于，Shadowsocks支持将配置�
 
 ## 1. 客户端准备
 
-Shadowsocks提供了绝大多数平台的客户端支持，甚至包括智能路由器。我们这里介绍最为常见桌面端的平台上的配置。 这里我提供了mac和win这两个主要平台截止到目前为止最新版本的客户端下载：
+Shadowsocks提供了绝大多数平台的客户端支持，甚至包括智能路由器。我们这里介绍最为常见桌面端的平台上的配置。 这里我提供了mac和win这两个主要平台截止到目前为止最新版的客户端下载：
 
 1. macOS客户端[下载](https://query.codewoody.com/query?bucket=default&resname=ShadowsocksX-NG.app.1.8.2.zip);
 
 2. win客户端[下载](https://query.codewoody.com/query?bucket=default&resname=Shadowsocks-4.1.2.zip).
 
-其中，mac文件下载下来解压缩后，直接拖拽进入`Application`文件夹（应用文件夹），然后双击打开使用就可以了。win端的文件解压缩后是一个可以直接运行的绿色版（不需要安装）。将解压缩文件移动到一个稳妥的位置，然后双击打开`Shadowsocks.exe`文件就可以了（此时右下角会出现一个小飞机图标）
+其中，mac文件下载下来解压缩后，直接拖拽进入`Application`文件夹（应用文件夹），然后双击打开使用就可以了。win端的文件解压缩后是一个可以直接运行的绿色版（不需要安装）。将解压缩文件移动到一个稳妥的位置，然后双击打开`Shadowsocks.exe`文件就可以了（此时右下角会出现一个小飞机图标）
 
 > 更加丰富的客户端下载：[https://shadowsocks.org/en/download/clients.html](https://shadowsocks.org/en/download/clients.html)
 
@@ -37,7 +37,7 @@ Shadowsocks提供了绝大多数平台的客户端支持，甚至包括智能�
 
 3. 第三个section中，可以进行服务器的配置。
 
-    1. 如果你是使用二维码进行配置，那么，将二维码用预览打开，确保这个预览窗口位于最上层可见，然后点击菜单中的“扫描屏幕上的二维码”就可以导入服务器配置了。
+    1. 如果你是使用二维码进行配置，那么，将二维码用预览打开，确保这个预览窗口位于最上层可见，然后点击菜单中的“扫描屏幕上的二维码”就可以导入服务器配置了。
 
     2. 如果你是使用详细配置信息进行配置，那么需要进入服务器 -> 服务器设置，手动填写各个参数进行添加。
 
