@@ -12,3 +12,5 @@ WAVE的全称是Wireless Access in Vehicular Environment，是目前车联网通
 4. [WAVE中的SCH调度机制研究状况](./sch.html)
 5. [通信范围模型探讨](./通信范围模型探讨.html)
 6. [ns3中的wave模块](./ns3中的wave模块.html)
+7. [延时分析](./delay-analysis.html)
+8. [动态控制发送速率](./dynamic-beacon-interval.html)

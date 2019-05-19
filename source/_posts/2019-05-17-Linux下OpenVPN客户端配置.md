@@ -30,7 +30,7 @@ sudo apt-get install openvpn
 sudo openvpn --config your.ovpn
 ```
 
-不过这个命令会在前台运行，当我们退出SSH之后就会终止。为了让OpenVPN能够在后台运行，且能够自动开机启动，我们需要借助于Systemctl的帮助。首先我们将ovpn文件复制到`/etc/openvpn/client/`下，**将后缀直接修改为`.conf`**。如果配置文件需要我们手动输入密码，我们需要将密码以配置文件的形式固定下来，不然自动启动会失败。在`/etc/openvpn/client/`新建一个`account.txt`文件，在其中输入：
+不过这个命令会在前台运行，当我们退出SSH之后就会终止。为了让OpenVPN能够在后台运行，且能够自动开机启动，我们需要借助于Systemctl的帮助。首先我们将ovpn文件复制到`/etc/openvpn/client/`下，**将后缀直接修改为`.conf`**。如果配置文件需要我们手动输入密码，我们需要将密码以配置文件的形式固定下来，不然自动启动会失败。在`/etc/openvpn/client/`新建一个`account.txt`文件，在其中输入：
 
 ```text
 username

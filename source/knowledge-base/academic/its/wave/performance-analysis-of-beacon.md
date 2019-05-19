@@ -33,12 +33,12 @@ mathjax: true
 考虑概率$P(l, n, w, k)$表示$n$个车辆在CCHI开头产生了Beacon包，竞争窗口大小为$w$，第一次发送尝试为$l-1$，$k$辆车在第$l$个时隙尝试传输（$k\leq n$），此概率值为：
 
 \begin{equation}
-\label{P}
 \begin{aligned}
 P(l, n, w, k)&=\left(1-\frac{l-1}{w}\right)^{n} \cdot \left( \begin{array}{c}{n} \\ {k}\end{array}\right)\left(\frac{1}{w-l+1}\right)^{k}\left(1-\frac{1}{w-l+1}\right)^{n-k} \\
 &= \left( \begin{array}{c}{n} \\ {k}\end{array}\right) \cdot \frac{(w-l)^{n-k}}{w^n} \\
 &= \left( \begin{array}{c}{n} \\ {k}\end{array}\right) \cdot \left(1 - \frac{l}{w}\right)^{n-k} \cdot \frac{1}{w^{k}}.
 \end{aligned}
+\label{P}
 \end{equation}
 
 考虑到Backoff Counter的最大值是$w$，完成所有Beacon包传输需要的平均时间为
