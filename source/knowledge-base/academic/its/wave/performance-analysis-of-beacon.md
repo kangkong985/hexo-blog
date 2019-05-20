@@ -3,7 +3,9 @@ title: WAVE标准中的Beacon性能简化分析
 date: 2019-05-07 13:35:41
 mathjax: true
 ---
-在很多使用WAVE作为车联网通信标准的文献研究中[@zhang2014scalable] [@hafeez2013performance]，在遇到Beacon时通常会简化其退避过程。由于Beacon的生命周期有限，无法接受无止限的退避，因此，可以令其简化为只进行一轮退避，从而略过退避窗口指数增长的过程。此时Beacon的发送过程简化为一维马尔科夫过程。
+~~在很多使用WAVE作为车联网通信标准的文献研究中[@zhang2014scalable] [@hafeez2013performance]，在遇到Beacon时通常会简化其退避过程。由于Beacon的生命周期有限，无法接受无止限的退避~~。在IEEE802.11 DCF中，在一轮退避完成后节点会尝试发包，如果发包失败，则会将其竞争窗口加倍。由于发送失败需要经过ACK来确认.因此广播包只能进行一轮退避。此时Beacon的发送过程可以简化为一维马尔科夫过程。
+
+![广播包的一维马尔科夫链 [@nguyen2018survey] ](https://imgs.codewoody.com/uploads/big/a4e7b85649818f46469ffdf0fccd0b47.png)
 
 ## 非马尔科夫链方法
 
