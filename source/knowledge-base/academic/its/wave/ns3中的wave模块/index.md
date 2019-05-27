@@ -172,6 +172,8 @@ packet->AddHeader (seqTs);
 sender->Send (packet, dest, 0x0800);
 ```
 
+> 这里的协议号是`0x0800`，即发送的是IP包，IP包只能在CCH上发送
+
 注意在执行上面的发送前还需要对WAVE进行信道配置，否则无法发送。信道配置不需要在每次发送前配置，只需要在设置发生变更的时候修改设置即可。配置的示例代码如下：
 
 ```cpp
@@ -265,6 +267,34 @@ else
 在涉及参数配置以及`AMSDU`等方面的设置完成后调用`m_low->StartTransmission`。前面我们提到过，这里的`m_low`为`WaveMacLow`类型。
 
 #### `WaveMacLow::StartTransmission`
+
+#### 发送过程中地址的处理
+
+`WaveNetDevice::Send`接口发送数据时，我们发现发送的目标地址并不是设置到packet里面，而是独立传递进了接口。这里简要梳理一下在发送过程中地址的处理。
+
+在`WaveNetDevice::Send`函数中，`Address`类型的目标地址被转换成`Mac48Address`类型，再传递给`OcbWifiMac::Enqueue`函数。在这个函数里面，这个地址被复制给802.11的帧头的`addr1`字段。帧头的类型为`WifiMacHeader`
+
+### RTS/CTS
+
+RTS/CTS部分是由`MacLow`负责的，我们从`MacLow::StartTransmission`开始梳理。
+
+#### NeedRTS
+
+首先要讨论的是，系统如何决定一个包是否需要进行RTS
+
+```cpp
+bool
+MacLow::NeedRts (void) const
+{
+  WifiTxVector dataTxVector = GetDataTxVector (m_currentPacket, &m_currentHdr);
+  return m_stationManager->NeedRts (m_currentHdr.GetAddr1 (), &m_currentHdr, m_currentPacket, dataTxVector);
+}
+```
+
+这里的取出来的`dataTxVector`的作用并不关键，其主要作用的是两个因素：
+
+1. 地址是否是group: `address.IsGroup ()`
+2. 包的大小是否超过了`WifiRemoteStationManager::m_rtsCtsThreshold`。不过这个包被默认设置为65535，这个条件几乎无法满足.
 
 ### WSA包的发送
 
