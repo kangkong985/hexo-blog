@@ -381,3 +381,196 @@ ChannelCoordinator::NotifyGuardSlot (void)
 在`DefaultChannelScheduler::NotifyGuardSlotStart`中，开头的Guard Interval长度被设置为繁忙`mac->MakeVirtualBusy (duration);`。实际的信道切换过程也在这个函数中通过调用`DefaultChannelScheduler::SwitchToNextChannel`来进行。由于Guard Interval区间内被设置为繁忙，所以当设备结束睡眠时，检测信道繁忙，故而会开始执行退避。
 
 > 这里有一个疑问：`ChannelCoordinator`内部的Schedule调度完全是独立进行的，如果采用了Extended Access，即CCHI会提前结束，那么原定的Guard Interval还是会被设置么？
+
+### 退避过程(Backoff)
+
+退避过程主要实现在`ChannelAccessManager`内。在`Txop::Queue`函数收到一个包之后，会调用`Txop::StartAccessIfNeeded`这个函数来尝试访问信道。
+
+```cpp
+void
+Txop::StartAccessIfNeeded (void)
+{
+  NS_LOG_FUNCTION (this);
+  if (m_currentPacket == 0
+      && !m_queue->IsEmpty ()
+      && !IsAccessRequested ()
+      && !m_low->IsCfPeriod ())
+    {
+      m_channelAccessManager->RequestAccess (this);
+    }
+}
+```
+
+实质调用的`ChannelAccessManager::RequestAccess`这个函数。这个函数我们挑选其中重要的代码列在下面：
+
+```cpp
+void
+ChannelAccessManager::RequestAccess (Ptr<Txop> state, bool isCfPeriod)
+{
+  // ...
+  UpdateBackoff ();
+  NS_ASSERT (!state->IsAccessRequested ());
+  state->NotifyAccessRequested ();
+  Time lastTxEnd = m_lastTxStart + m_lastTxDuration;
+  if (lastTxEnd > Simulator::Now ())
+    {
+      NS_LOG_DEBUG ("Internal collision (currently transmitting)");
+      state->NotifyInternalCollision ();
+      DoRestartAccessTimeoutIfNeeded ();
+      return;
+    }
+  if (state->GetBackoffSlots () == 0)
+    {
+      if (IsBusy ())
+        {
+          NS_LOG_DEBUG ("medium is busy: collision");
+          // someone else has accessed the medium; generate a backoff.
+          state->NotifyCollision ();
+          DoRestartAccessTimeoutIfNeeded ();
+          return;
+        }
+      else if (IsWithinAifs (state))
+        {
+          NS_LOG_DEBUG ("busy within AIFS");
+          state->NotifyCollision ();
+          DoRestartAccessTimeoutIfNeeded ();
+          return;
+        }
+    }
+  DoGrantAccess ();
+  DoRestartAccessTimeoutIfNeeded ();
+}
+```
+
+这个函数内部主要步骤为：
+
+1. 检查是否有内部冲突，即当前是否正在发送一个数据包。如果发生了内部冲突，会调用`Txop::NotifyInternalCollision`回调，并通过`DoRestartAccessTimeoutIfNeeded`这个函数在一段时间后重新访问信道。
+2. 检查退避计数器的状态：如果计数器到0了，若信道繁忙，则认为产生了一次碰撞，若仍然在Aifs状态，那么也认为是一次碰撞（事实上这里的两个分支是一样的）
+3. 如果退避计数器不是0，即上一次退避未完成时，通过`DoRestartAccessTimeoutIfNeeded`这个函数延后访问信道（这里的`DoGrantAccess`函数不会允许访问信道）。
+
+下面我们分解讲一下主要函数的作用。
+
+#### `UpdateBackoff`
+
+在实际的WAVE系统中，其退避过程为了性能考虑采用是离散的方法，即定一个退避计数器，每经过一个时隙（slot），这个退避计数器减一，直到变成0。有意思的是，在仿真系统中，NS3反而是使用了“连续”的方法来实现（当然本质是离散的，但是API调用形式上使用`Simulator::Schedule`直接调度backoff相关事件，显得是连续的）。此时，我们如果要访问退避计数器的值，如调用（`state->GetBackoffSlots ()`），就需要先调用`UpdateBackoff`这个函数来进行离散和连续的转化。
+
+#### `DoRestartAccessTimeoutIfNeeded`
+
+在`ChannelAccessManager`的实现中，`ChannelAccessManager`和`Txop`是一对多的关系，即多个`Txop`可以由同一个`ChannelAccessManager`来管理。不过在实际代码中，至少我们关注的`RegularWifiMac`及其子类，`ChannelAccessManager`和`Txop`都是一对一。
+
+```cpp
+RegularWifiMac::RegularWifiMac ()
+{
+  // ...
+  m_channelAccessManager = CreateObject<ChannelAccessManager> ();
+  m_channelAccessManager->SetupLow (m_low);
+
+  m_txop = CreateObject<Txop> ();
+  m_txop->SetMacLow (m_low);
+  m_txop->SetChannelAccessManager (m_channelAccessManager);
+  m_txop->SetTxMiddle (m_txMiddle);
+  m_txop->SetTxOkCallback (MakeCallback (&RegularWifiMac::TxOk, this));
+  m_txop->SetTxFailedCallback (MakeCallback (&RegularWifiMac::TxFailed, this));
+  m_txop->SetTxDroppedCallback (MakeCallback (&RegularWifiMac::NotifyTxDrop, this));
+  // ...
+}
+```
+
+我们这里还是假定以存在多个`txop`的情况来讨论。在`DoRestartAccessTimeoutIfNeeded`中，函数首先根据当前的状态，选择出最近一个结束一轮退避过程`Txop`的退避结束时间`expectedBackoffEnd`。如果当前已经安排的`m_accessTimeout`时间在这个退避结束时间后面，那么以新的时间重新调调度一个`m_accessTimeout`事件。这一事件的回调函数是`ChannelAccessManager::AccessTimeout`
+
+#### `AccessTimeout`
+
+这个函数内部非常简单：
+
+```cpp
+void
+ChannelAccessManager::AccessTimeout (void)
+{
+  NS_LOG_FUNCTION (this);
+  UpdateBackoff ();
+  DoGrantAccess ();
+  DoRestartAccessTimeoutIfNeeded ();
+}
+```
+
+#### `DoGrantAccess`
+
+这个函数内部进行真正的信道权限赋予的操作。不过函数仍然会检查每个`Txop`的退避状态，只有完成了退避的`Txop`才有可能被赋予信道访问权限。另外，对于 其他正在尝试访问信道的`Txop`，会出发一次Internal Collision.
+
+被赋予信道访问权限的`Txop`的`NotifyAccessGranted`函数会被调用.
+
+### EDCA优先级控制
+
+#### 发送过程优先级设置
+
+EDCA优先级控制通过过程如下：
+
+在`WaveNetDevice::SendX`函数的参数`TxInfo`中，包含一个`priority`的属性，这个属性被设置到`SocketPriorityTag`中，并被添加到包中。在`OcbWifiMac::Enqueue`函数中通过`QosUtilsMapTidToAc`函数转化成EDCA index，具体转化规则为：
+
+1. 0, 3 -> VC_BE  (Best Effort)
+2. 1, 2 -> AC_BK  (Background)
+3. 4, 5 -> VC_VI  (Video)
+4. 6, 7 -> VC_VO  (Audio)
+
+这里的Priority的默认值是7
+
+#### 优先级的退避参数设置
+
+WAVE使用的是`OcbWifiMac`，对EDCA队列的配置通过函数`OcbWifiMac::ConfigureEdca`来进行。这个函数的调用树如下：
+
+`WaveHelper::Install` -> `WifiMac::ConfigureStandard` -> `OcbWifiMac::FinishConfigureStandard` -> `OcbWifiMac::ConfigureEdca`.
+
+`OcbWifiMac::ConfigureEdca`中的具体设置过程如下：
+
+```cpp
+void
+OcbWifiMac::ConfigureEdca (uint32_t cwmin, uint32_t cwmax, uint32_t aifsn, enum AcIndex ac)
+{
+  NS_LOG_FUNCTION (this << cwmin << cwmax << aifsn << ac);
+  Ptr<Txop> dcf;
+  switch (ac)
+    {
+    case AC_VO:
+      dcf = RegularWifiMac::GetVOQueue ();
+      dcf->SetMinCw ((cwmin + 1) / 4 - 1);
+      dcf->SetMaxCw ((cwmin + 1) / 2 - 1);
+      dcf->SetAifsn (aifsn);
+      break;
+    case AC_VI:
+      dcf = RegularWifiMac::GetVIQueue ();
+      dcf->SetMinCw ((cwmin + 1) / 2 - 1);
+      dcf->SetMaxCw (cwmin);
+      dcf->SetAifsn (aifsn);
+      break;
+    case AC_BE:
+      dcf = RegularWifiMac::GetBEQueue ();
+      dcf->SetMinCw (cwmin);
+      dcf->SetMaxCw (cwmax);
+      dcf->SetAifsn (aifsn);
+      break;
+    case AC_BK:
+      dcf = RegularWifiMac::GetBKQueue ();
+      dcf->SetMinCw (cwmin);
+      dcf->SetMaxCw (cwmax);
+      dcf->SetAifsn (aifsn);
+      break;
+    case AC_BE_NQOS:
+      dcf = RegularWifiMac::GetTxop ();
+      dcf->SetMinCw (cwmin);
+      dcf->SetMaxCw (cwmax);
+      dcf->SetAifsn (aifsn);
+      break;
+    case AC_UNDEF:
+      NS_FATAL_ERROR ("I don't know what to do with this");
+      break;
+    }
+}
+```
+
+这里AIFSN的取值为：
+
+- AC_BE_NQOS: 2
+- AC_VO: 2
+- AC_VI: 3
+- AC_BE: 6
+- AC_BK: 9
