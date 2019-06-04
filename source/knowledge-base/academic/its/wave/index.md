@@ -13,6 +13,7 @@ WAVE的全称是Wireless Access in Vehicular Environment，是目前车联网通
 5. [通信范围模型探讨](./通信范围模型探讨.html)
 6. [ns3中的wave模块](./ns3中的wave模块)
     1. [ns3中的Attribute系统的使用](./ns3中的wave模块/ns3中的Attribute系统使用.html)
+    2. [无线技术大讲堂](https://zhuanlan.zhihu.com/dot11)：这是一个知乎专栏的，里面涉及到了非常多的802.11协议内容分析
 7. [延时分析](./delay-analysis.html)
 8. [动态控制发送速率](./dynamic-beacon-interval.html)
 9. [马尔科夫链在WAVE网络性能分析中的应用](./markov)
