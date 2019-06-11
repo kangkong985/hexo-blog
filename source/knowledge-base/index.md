@@ -16,10 +16,16 @@ date: 2019-04-29 11:10:41
 这里给出了多种软件的安装方法
 
 - [python](/knowledge-base/programming/how-to-install/python.html)
+- [apt使用和配置的一些信息](/knowledge-base/programming/how-to-install/apt.html)
+
+### Linux Shell
+
+Linux命令行使用指北
 
 ## Academic
 
 - [智能交通系统](./academic/its)
+- [WLAN](./academic/wlan)
 
 ## [History](./history)
 
