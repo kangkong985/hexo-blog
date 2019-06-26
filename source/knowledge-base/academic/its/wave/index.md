@@ -19,3 +19,4 @@ WAVE的全称是Wireless Access in Vehicular Environment，是目前车联网通
 8. [动态控制发送速率](./dynamic-beacon-interval.html)
 9. [马尔科夫链在WAVE网络性能分析中的应用](./markov)
     1. [三维马尔科夫链的详细调研](./markov/3D-markov.html)
+    2. [一维马尔科夫过程的使用](./markov/1D-markov.html)
