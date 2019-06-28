@@ -2,7 +2,7 @@
 title: 'Mac: 将APP打包成dmg'
 tags:
   - 教程
-  - MacOS
+  - macOS
 categories:
   - 教程
 abbrlink: 62609

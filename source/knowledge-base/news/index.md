@@ -17,9 +17,9 @@ date: 2019-06-26 15:39:41
 >
 > 邓军告诉新京报记者，新晃一中挖出的骨骸是不是自己父亲的，仍需进行进一步鉴定。
 
-![嫌疑人-杜少平](https://pic1.zhimg.com/80/v2-d409b53a36855752427b6f620d0ff4d5_hd.jpg)
+![嫌疑人-杜少平](https://imgs.codewoody.com/uploads/big/786f4062617bf2340a2147f2f66fd939.jpg)
 
-![挖掘现场](https://pic2.zhimg.com/80/v2-eed7891ea2a307f133069f30c96d96b5_hd.jpg)
+![挖掘现场](https://imgs.codewoody.com/uploads/big/d5fc5499d36cc17abcb65ddf4b6b195e.jpg)
 
 这次之所以能够挖出十六年前的案子，是因为今年中央扫黑除恶第16督导组进驻湖南调查。督导组派多路人马下沉到市州地县。其中赴怀化开展督导工作的是第七小组，时间为4月18日至24日。
 
@@ -29,8 +29,8 @@ date: 2019-06-26 15:39:41
 
 涉事的新晃一中始建于1939年，可谓历史悠久。长安街知事（微信ID：Capitalnews）注意到，早在1988年，黄炳松就成为副校长，10年后升任校长。2004年2月，也就是埋尸案发生一年后，他才卸去该职务。算下来，他管理学校长达17年。
 
-![黄炳松](https://pic3.zhimg.com/80/v2-435ca94a8cb1dcf4ae753ea37fea90cc_hd.jpg)
+![黄炳松](https://imgs.codewoody.com/uploads/big/6546c1411547ad463e6fa7c5bdc8e2ad.jpg)
 
 以下是魔幻现实主义：
 
-![魔幻现实主义：活埋](https://pic3.zhimg.com/80/v2-57b78d05c4e67636f1c363681cff9c4c_hd.jpg)
+![魔幻现实主义：活埋](https://imgs.codewoody.com/uploads/big/54aab0df8cff533e86817c52cade0b6f.jpg)
