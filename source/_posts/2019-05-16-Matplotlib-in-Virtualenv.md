@@ -2,7 +2,7 @@
 title: Matplotlib in Virtualenv
 tags:
   - 教程
-  - debug
+  - Debug
   - python
 categories:
   - 教程

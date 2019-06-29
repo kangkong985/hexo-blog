@@ -3,6 +3,7 @@ title: 如何自己搭建一个Time Machine服务器
 tags:
   - 教程
   - macOS
+  - linux
 categories:
   - 教程
 abbrlink: 14680

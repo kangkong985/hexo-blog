@@ -2,7 +2,7 @@
 title: Docker Volume的权限问题
 tags:
   - docker
-  - debug
+  - Debug
 categories:
   - 教程
 abbrlink: 25188

@@ -4,7 +4,7 @@ abbrlink: 65501
 date: 2019-02-22 16:15:14
 tags:
   - processing
-  - debug
+  - Debug
   - java
 categories:
   - processing

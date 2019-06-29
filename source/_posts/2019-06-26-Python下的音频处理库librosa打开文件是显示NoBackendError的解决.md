@@ -3,10 +3,10 @@ title: Python下的音频处理库librosa打开文件是显示NoBackendError的�
 abbrlink: 40199
 date: 2019-06-26 12:56:10
 tags:
-  - debug
+  - Debug
   - python
 categories:
-  - debug
+  - Debug
 ---
 近日在django项目中采用了librosa来分析用户上传的音频，主要是对其做一定间隔的采样用于绘制波形图。在本地(MacOS)上工作正常，部署到Ubuntu服务器后，自己手动用python方式运行django的server时，工作都是正常的，然而当我用superviosr挂起之后就一直报NoBackendError的错误，反复检查了FFmpeg的安装，应该是没有问题的。网上搜了一下没有看到比较合适的解决办法，故不得不自己读源码来调试了。
 <!--more-->
