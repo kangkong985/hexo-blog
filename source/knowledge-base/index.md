@@ -39,6 +39,7 @@ Linux命令行使用指北
 
 - [中国近现代史部分的史料](/knowledge-base/history/中国史/近代史/)
 - [中国中古代部分的史料](/knowledge-base/history/中国史/中古史)
+- [宗教史](/knowledge-base/history/宗教/)
 
 ## [Science](./science)
 

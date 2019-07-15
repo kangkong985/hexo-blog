@@ -13,6 +13,8 @@ categories:
 
 这里讲讲C++标准库里面map的用法。
 
+<!--more-->
+
 ## 使用map
 
 头文件：
