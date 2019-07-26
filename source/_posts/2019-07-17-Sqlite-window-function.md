@@ -121,7 +121,7 @@ SELECT c, a, b, group_concat(b, '.') OVER (
 FROM t1 ORDER BY c, a;
 ```
 
-在上面的查询例子中，`PARTITION BY c`将查询结果划分成了三个Partition。第一个Parition的`c = one`，第二个Partition的`c = three`，第三个Partition的`c = two`。注意，Partiion的划分，及其后续的的`ORDER BY`的排序，和最终查询结果的顺序是没有关系的。上面的查询的例子的输出也可能是：
+在上面的查询例子中，`PARTITION BY c`将查询结果划分成了三个Partition。第一个Parition的`c = one`，第二个Partition的`c = three`，第三个Partition的`c = two`。注意，Partiion的划分，及其后续的的`ORDER BY`的排序，和最终查询结果的顺序是没有关系的。上面的查询的例子的输出也可能是：
 
 ```sql
 -- The following SELECT statement returns:
