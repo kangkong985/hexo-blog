@@ -13,6 +13,79 @@ date: 2019-07-04 10:53:41
 
 稍后细细扒一下。
 
+### 科大·黄秋原
+
+- [如何评价CVPR 2019最佳论文得主－微软研究员黄秋原小姐的成人教育本科学历？是否涉嫌学历造假？](https://www.zhihu.com/question/331746361)
+- [佛罗里达大学女博士黄秋原甩了Allen-Zhu朱泽园恋上UF教授吴大鹏八卦内幕](https://www.aiweinews.com/archives/30366.html)
+
+大致背景如下：
+
+> 黄秋原女士是中国科学技术大学的2007级脱产成教本科生(学号：TB07202112), 2011年以成教本科学历成功申请美国佛罗里达大学计算机专业博士, 主攻网络方向, 同时从事网络编码/社交网络/物联网等多个方向的研究,2017年博士毕业后进入美国微软研究院总部工作, 从事计算机视觉和人工智能方向的研究, 在CVPR/NIPS/AAAI等人工智能顶级会议上发表论文多篇, 先后获得包括德国海德堡获奖者论坛评选的“全球杰出科学家”和麻省理工学院评选的 “女性学术新星”等多个学术奖项和荣誉称号, 并于今年以实习生导师身份获得计算机视觉顶级会议CVPR 2019最佳学生论文奖.
+
+![图为黄秋原](https://www.aiweinews.com/wp-content/uploads/2019/06/v2-33a220741c119fba5a66661866495738_hd.jpg)
+
+主要问题有：
+
+### 同济·沈海英
+
+沈海英这个案例已经给已经比较久了。[个人履历](http://bbs.creaders.net/life/bbsviewer.php?btrd_id=2380152&btrd_trd_id=748872)应该大概是这样？
+
+> **Ph.D. - 2006, Wayne State University**
+>
+> Computer Engineering
+>
+> **M.S. - 2004, Wayne State University**
+>
+> Computer Engineering
+>
+> **B.S. - 2000, Tongji University**
+>
+> Computer Science and Engineering
+
+![Dr. Haiying (Helen) Shen is an associate professor in the Department of Computer Science, the Department of Systems & Information Engineering and the Department of Electrical & Computer Engineering Department at the University of Virginia. Her research interest focuses on Distributed computing including Cloud and edge computing, Big data, Information retrieval, Content delivery networks, Cyber-physical systems, Internet of things, High performance computing, Machine learning application and Social networks. She was a recipient of the TCSC Mid-career Award 2015, IBM Faculty Award 2015, the NSF CAREER Award 2013, the Sigma Xi Clemson Chapter Young Investigator of the Year Award 2013, and the Microsoft Faculty Fellowship Award 2010. (这段bio摘自其[个人主页](http://www.cs.virginia.edu/~hs6ms/))](http://www.cs.virginia.edu/~hs6ms/me.jpg)
+
+但是，这里的同济的学历貌似不是正牌的同济，而是同济合并的一个学校？有点类似成人本科学历之类的：
+
+> 她上了菜园初中，然后上了个什么中专，然后从中专去了同济计算机系弄的职教班。这个职教班是直接从上海中专招的，这帮人都没有经过高考。她一直声称自己是同济CSE系毕业的。无耻吧？哦。原来是同济大学办的职教班。那种职教班就是报名交钱就可以读的吧。其实读职教班本身也没什么，但是非要装就很让人看不惯了。
+> -- [出处·第5074楼](http://m.huaren4us.com/Home/Topic?tid=871124&pIndex=170)
+
+- [(2011)关于小三师姐和小三女AP关联事件的总结](https://www.douban.com/group/topic/16928612/)
+- [更多的详情](/knowledge-base/backups/同济沈海英.html)
+- [学术圈四大蛊王之首沈海英有人了解吗](https://www.douban.com/group/topic/146711919/?dt_dapp=1)
+- [2016年·大家还记得沈ap吗，人家跳到弗吉尼亚大学了](http://forums.huaren.us/archiver/showtopic.aspx?topicid=2063378)
+- [Haiying Shen (hs6ms) - EN-Comp Science Dept Associate Professor](https://publicsearch.people.virginia.edu/person/hs6ms): 佛吉尼亚大学中的信息
+- [个人主页](http://www.cs.virginia.edu/~hs6ms/)
+- [北美华人e网关于相关事件的讨论帖子](http://m.huaren4us.com/Home/Topic?tid=871124&pIndex=170)
+
+### 东南·钱璐璐
+
+结婚三次，每次老公都是一婚。
+
+本科是特别普通的二本，后来并入了东南大学。据说她属于很努力但不聪明的那种，考研没考上，本科毕业就结婚了。通过第一任老公去了交大读研， 又跟系草师兄好了，师兄当时也有交往几年的女票，各自劈腿结婚，在系里当时是大八卦。
+
+caltech大牛winfree到上交访问认识了钱，一回美国就邀请钱到caltech访问了两周，所以钱的导师立马放钱毕业，因此钱三年就博士毕业了，这种毕业速度让其他同学又无语凝噎了好一阵。
+
+后来钱璐璐和winfree结婚了。在这次婚姻之前还有两次婚姻，因此也被一些网友称为学界邓文迪（来源需要进一步考证）。
+
+![](https://imgs.codewoody.com/uploads/big/513515a3cb36df8322a617c03863ad97.png)
+
+- [豆瓣·学术女蛊王c位当属钱璐璐把](https://www.douban.com/group/topic/146821687/)
+- [个人主页](http://www.dna.caltech.edu/~lulu/)：加州理工的AP啊~
+- [Lulu Qian - CS+Biology - Alumni College 2016](https://www.youtube.com/watch?v=mV7FUOhDcs8): 好歹英语不错
+- [更多豆瓣讨论](https://www.douban.com/group/topic/146705833/)
+
+![](https://imgs.codewoody.com/uploads/big/f581a621f87decbf5df0b7347e1449b8.jpg)
+
+> 其实钱璐璐的故事不算上『丑闻』的底部，也并没有明显的养蛊的现象。不过攀上了一个大牛老公，从此人生走上了Easy难度的快车道。不过放在学术圈子里来说，毕竟，面子上，这种裙带关系上位还是会引人不齿。
+
+### 复旦·李敏
+
+这个就是这几天爆火的复旦学术圈丑闻了。据说是和四名Ph.D同时往来，还引得以为硕导为其自杀。
+
+### 中科大·陈路
+
+- [鹅们记得还有一个学术妲己叫做 陈路 的吗？](https://www.douban.com/group/topic/146724208/?dt_dapp=1)
+
 ## 弗罗里达大学 - 李涛
 
 6 月 13 日，佛罗里达大学在读博士生陈慧祥（Huixiang Chen）在校园自杀身亡，此前他担任第一作者的论文刚刚入选 2019 年计算机体系结构国际研讨会（ISCA）。
