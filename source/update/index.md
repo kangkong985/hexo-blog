@@ -3,6 +3,15 @@ title: 博客更新
 date: 2019-05-07 15:26:31
 ---
 
+## 2019.08.02
+
+Reference部分文字渲染时不使用标准汉字标准格式的`em`渲染样式。方法为在`_layout.swig`中运行
+
+```js
+document.getElementById("refs")
+    .setAttribute("lang", "en_US");
+```
+
 ## 2019.06.29
 
 在标题前方添加Emoji

@@ -71,7 +71,7 @@ WSA的情况要复杂一些，我们这里梳理一下WSA的工作过程。WSA�
 
 令$s(t)$和$b(t)$分别为代表WSA包在时隙$t$的退避阶段以及退避计数器的值的随机变量。令状态$I_{s, \emptyset}$代表WSA队列为空。最大重传次数为$m$，竞争窗口在第$i$个阶段为$W_{s, i}, (i \in [0, m])$。在第一次传输尝试时，退避窗口被设置为最小值$W_{s, 0}$。当检测到碰撞时，竞争窗口加倍，并且开始重传。**一个重要的假定是$s(t)$，即退避的阶段，与是否发生碰撞是独立的**。二维过程$\{s(t), b(t)\}$可以建模成二维马尔科夫链。根据在达到最大退避窗口时的不同行为，我们可以划分两个不同的类别：
 
-1. *remaining maximal backoff stage*: 即达到最大的竞争窗口后，直到发送成功前，始终保持最大竞争窗口；
+1. *remaining maximal backoff stage*: 即达到最大的竞争窗口后，直到发送成功前，始终保持最大竞争窗口；这种模式一般比较常见。
 2. *reset backoff stage*: 即达到最大的竞争窗口后，立即重置竞争阶段$s(t)$。
 
 ![二维马尔科夫过程](https://imgs.codewoody.com/uploads/big/398544df56e2adab791c91ef42a93942.png)
@@ -81,6 +81,10 @@ WSA的情况要复杂一些，我们这里梳理一下WSA的工作过程。WSA�
 \begin{equation}
 b_{s, i, k}=\lim _{t \rightarrow \infty}\{s(t)=i, b(t)=k\}, 0 \leq i \leq m, 0 \leq k \leq W_{s, i} - 1
 \end{equation}
+
+#### Remaing maximal backoff stage
+
+这本部分的内容主要来自[@eustathia2002csma]. 这篇文章也是基于Bianchi的经典论文[@bianchi2000performance]。其改进主要在于考虑了信道的繁忙状态条件以及此条件对于退避机制的使用有何影响。Bianchi使用的假设条件也为这篇文章所使用：有限数量的通信节点以及理想信道条件。
 
 ### 三维马尔科夫链
 
