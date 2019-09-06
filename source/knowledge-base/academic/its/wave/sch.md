@@ -44,6 +44,4 @@ Q-WBSS是围绕着Q-pr建立的，因此Q-WBSS的初始化实质就是Q-pr初始
 
 ### Gossip-based distributed CAP reservation
 
-
-
 ## Reference
