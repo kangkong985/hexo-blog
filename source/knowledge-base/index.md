@@ -29,7 +29,7 @@ date: 2019-04-29 11:10:41
 
 ### Linux Shell
 
-Linux命令行使用指北
+- [Linux命令行使用指北](./programming/linux-shell/)
 
 ## Academic
 
