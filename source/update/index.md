@@ -3,6 +3,26 @@ title: 博客更新
 date: 2019-05-07 15:26:31
 ---
 
+## 2019.09.17
+
+添加了一种增加脚注的方法，表现形式为：
+
+<img src="https://imgs.codewoody.com/uploads/big/568ddaf99f047d48af770aae35b15b77.png" style="width: 80%">
+
+脚注字体较小，为红色。通过自定义脚本（根目录下`scripts`文件夹下`utils.js`文件）实现：
+
+```js
+hexo.extend.filter.register('before_post_render', function (data) {
+  var config = this.config;
+  if (data.footnote !== true)
+    {
+      return data;
+    }
+  data.content = data.content.replace(/【~([^】]+)】/g, '<span class="foot-note-span">【$1】</span>')
+  return data;
+})
+```
+
 ## 2019.08.02
 
 Reference部分文字渲染时不使用标准汉字标准格式的`em`渲染样式。方法为在`_layout.swig`中运行
