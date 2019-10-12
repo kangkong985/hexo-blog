@@ -42,6 +42,11 @@ IEEE Access, 2019
 
 <img src="https://imgs.codewoody.com/uploads/big/bb04ddedee00dadee9635854b99919f1.png" style="width: 70%">
 
+> <p id="伪代码说明">关于上面的算法我发现了一个有意思的问题: </p>
+>
+> 伪代码第9行中，如果只有两个节点，且两个节点采用了同一个时隙时，这两个节点都无法收到对面的包。那么按照现有的伪代码的逻辑，
+> 这两个节点会持续占用这两个节点进行通信，二者互相无法感知对方的存在。
+
 #### SCH 接入过程
 
 SCH的资源分配于CCH的协商段完成。由于SCH的通常是点对点通信，故完成协商的节点可以不等CCHI结束，立即切换到SCH进行通信。
@@ -58,7 +63,7 @@ SCHI 也被分割成多个时隙。一对车辆之间的传输可能无法使用
 
 <img src="https://imgs.codewoody.com/uploads/big/832b58b9739355368e8dcebdefa291c4.png" style="width:50%">
 
-如上图的，RES中包含了的源节点车辆ID $ID_{sour_veh}$，为需要服务的车辆；目标节点车辆ID $ID_{dest_veh}$，为提供服务的车辆；SCH信道编号$N_{sch}$，以及SCH的长度$T_{sch}$；以及需要使用的时隙集合$O_{set_ts}$。网络中其他车辆在收到RES消息时，会相应地更新SCH占用信息。
+如上图的，RES中包含了的源节点车辆ID $\text{ID}_{sour\_veh}$，为需要服务的车辆；目标节点车辆ID $\text{ID}_{dest\_veh}$，为提供服务的车辆；SCH信道编号$N_{sch}$，以及SCH的长度$T_{sch}$；以及需要使用的时隙集合$O_{set_ts}$。网络中其他车辆在收到RES消息时，会相应地更新SCH占用信息。
 
 在选择SCH信道时，优先选择已经被占用的信道。如果SCH中剩余的时隙资源无法满足需要，那么采用"try the best to transmit"的策略，选择最长的时隙分配。
 

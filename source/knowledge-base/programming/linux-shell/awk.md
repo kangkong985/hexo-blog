@@ -33,6 +33,14 @@ $ echo '192.168.1.1' | awk -F "." '{print $2}'
 168
 ```
 
+如果要打印某个范围内的所有行，可以使用如下的[方法](https://stackoverflow.com/questions/5081916/how-to-print-all-the-columns-after-a-particular-number-using-awk)：
+
+```shell
+awk '{ s = ""; for (i = 9; i <= NF; i++) s = s $i " "; print s }'
+```
+
+> 这里可以看出为什么开头说awk是一种语言了
+
 ## 条件过滤
 
 我们知道`awk`的用法是这样的，那么`pattern`部分怎么用呢？
