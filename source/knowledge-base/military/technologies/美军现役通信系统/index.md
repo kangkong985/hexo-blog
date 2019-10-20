@@ -173,11 +173,47 @@ ARC-231型甚高频/特高频电台，一种软件可编程无线电系统，目
 
 ### 战术级作战人员信息网（WIN-T）
 
-目前正逐步用于替换美军现役的“三军联合战术通信系统（TRI-TAC）”和“移动用户设备（MSE）”，WIN-T是未来美国陆军一种移动、高速、大容量的宽频主干网通信网络，可支持陆军全频谱作战，其地域覆盖范围上至战区级单位下至连级单位。该网络也是以节点（包括机载通信节点）为中心的系统，主要节点有广域网络节点（WN）和用户节点（SN），其中广域网络节点之间的连接是依靠地面宽带无线电中继系统或卫星通信或对流层散射通信或无人机通信或光纤电缆等方式实现的，这些相互连接的广域网节点就形成了WIN-T网络的主干；而用户节点则为战术用户接入该网络提供了入口。
+目前正逐步用于替换美军现役的“三军联合战术通信系统（TRI-TAC）”和“移动用户设备（MSE）”，WIN-T是未来美国陆军一种移动、高速、大容量的宽频主干网通信网络，可支持陆军全频谱作战，其地域覆盖范围上至战区级单位下至连级单位，将地面作战人员与指挥官和全球信息栅格（GIG）联系在一起。该网络也是以节点（包括机载通信节点）为中心的系统，主要节点有广域网络节点（WN）和用户节点（SN），其中广域网络节点之间的连接是依靠地面宽带无线电中继系统或卫星通信或对流层散射通信或无人机通信或光纤电缆等方式实现的，这些相互连接的广域网节点就形成了WIN-T网络的主干；而用户节点则为战术用户接入该网络提供了入口。
 
-未来战术级作战人员信息网（WIN-T）将广泛使用联合战术无线电系统（JTRS）和机载通信节点（ACN），以解决互通、带宽、速度、入口等问题，最终实现美军各军兵种部队对战场实时态势的全面感知。
+![THE BACKBONE OF THE U.S. ARMY'S TACTICAL NETWORK](https://imgs.codewoody.com/uploads/big/5a02c936d7d12f61833c7a064c8129d7.jpg)
 
-### 全球信息栅格（GIG）
+未来战术级作战人员信息网（WIN-T）将广泛使用[联合战术无线电系统（JTRS）](./JTRS.html)和机载通信节点（ACN），以解决互通、带宽、速度、入口等问题，最终实现美军各军兵种部队对战场实时态势的全面感知。WIN-T项目分为4个增项【~Increment】实施。
+
+1. [Army Warfighter Network - Tactical (WIN-T) Theory of Operation](https://ieeexplore.ieee.org/abstract/document/6735828): WIN-T是美国陆军（Army）的第一个全面集成的战区级的数据网络系统，可以从战区级往下覆盖至连级别【~连排级应该是[JTRS](./JTRS.html)的天下】。WIN-T项目分为4个增项【~Increment】实施。
+2. [Warfighter Information Network - Tactical (WIN-T)](https://gdmissionsystems.com/en/communications/warfighter-information-network-tactical)，这个网页里面提供了WIN-T的Commander's Handbook以及Program Update两个文件的下载。
+3. Wiki: [PM WIN-T](https://en.wikipedia.org/wiki/PM_WIN-T#WIN-T_Increment_2)
+
+#### Increment 1: Communications AT-THE-HALT
+
+最初被称为Joint Network Node Network (JNN-N)项目。WIN-T Increment 1 (Inc.1) 最早在2004年的Operation Enduring Freedom和Operation Iraqi Freedom行动中开始列装【~列装：Fielding】。Inc.1 第一次赋予了营【~battalion】级别的高速语音交换服务和数据通信网络。
+
+Inc.1 的列装工作在2012年6月完成<sup>2</sup>，目前为止由美国陆军、国民警卫队和预备役部队使用。
+
+![](https://imgs.codewoody.com/uploads/big/e4966d4e20ba475fda7946ae465e5d70.png)
+
+#### Increment 2: Communication ON-THE-MOVE
+
+2013年7月，美国陆军第十山地师于阿富汗战场最早开始列装Inc.2 <sup>2</sup>。Inc.2 使得士兵可以在脱离基础设施支持的情况下进行通信。
+
+其中，Inc.2 中的Tactical Communication Nodes【~战术通信节点】技术提供了战场移动基础设施服务。可移动的Point of Presence系统，该系统包含部署于营级及以上的战术单位的作战车辆的【~营级单位包含4个连，每个连最多两百名士兵10到30个载具】，以及vehicle wireless packages, Soldier Network Extension等连级的系统。
+
+Inc.2 使得作战命令从旅到师到连队等通信可以通过完全ad-hoc的自组网方式进行。指挥官和通信兵可以战场的任意地方操作和维护网络，而不需要专门停下来建设通信设备【~ON-THE-MOVE的含义】。
+
+> Inc.1 花了八年时间完成列装，看来Inc.2的列装工作应该还在进行中。
+
+![](https://imgs.codewoody.com/uploads/big/dde810b0e49ad9cc8064c456401ff44c.png)
+
+- Inc.2 测试报告: [Warfighter Information Network-Tactical Increment 2 (WIN-T Inc 2)](https://apps.dtic.mil/dtic/tr/fulltext/u2/a621709.pdf)
+
+#### Increment 3
+
+这个项目还未开始猎装。Inc.3 预计会提供完全的移动，灵活，动态的战术网络能力，能够为较为孤立地区的稀疏部队部署提供通信支持。Inc.3 中将会引入空中平台支持。从而实现一种三层架构的通信体系，包括：
+
+1. 传统的Line-Of-Sight通信；
+2. 空中平台：包括使用UAV和其他空中平台；
+3. beyond-line-of-sight，如卫星
+
+### [全球信息栅格（GIG）](./GIG.html)
 
 美军传统的地基、海基、空基和天基信息系统大部分都是一些专用系统，彼此之间难以兼容互通，显然，美军这种信息不能及时共享的状况大大地制约了三军联合作战效能的提升。因此，美军提出了“全球信息栅格（GIG）”计划，试图通过整合现有各种信息资源，建立起一个供美国陆、海、空三军通用的全球通信网络，并以此为中介，把美军散布在全球范围内的传感器网、计算机网和武器平台网联为一体，最终形成一个全时、全维、全频谱和全球性的用于信息化作战的立体互联网，为美军实现互联、互通、互操作奠定基础。
 

@@ -6,7 +6,7 @@ footnote: true
 
 ## 概述
 
-目前，美军正在逐步对现役通信系统进行数字化项目改造，以适应未来数字化战场的需要，联合战术无线电系统（JTRS）就是其中的一个重要项目。它是美军唯一一种可适用于所有军兵种要求的通用新型系列（数字）战术电台，其作用主要用于逐步取代美军各军兵种现役的20多个系列约125种以上型号的75万部电台。
+目前，美军正在逐步对现役通信系统进行数字化项目改造，以适应未来数字化战场的需要，[联合战术无线电系统（JTRS）](https://en.wikipedia.org/wiki/Joint_Tactical_Radio_System)就是其中的一个重要项目。它是美军唯一一种可适用于所有军兵种要求的通用新型系列（数字）战术电台，其作用主要用于逐步取代美军各军兵种现役的20多个系列约125种以上型号的75万部电台。
 
 联合战术无线电系统（JTRS）工作频率范围（2MHz–3GHz）极宽，基本覆盖了高频/甚高频/特高频波段，型号有手持式、背负式、车载式、机载式、舰载式和固定式等，其主要特点为多频段多模式多信道、可网络互联，这使得JTRS各种型号的电台在复杂的战场环境下不仅能做到相互之间兼容互通，而且还可通过其跨频段跨时空的横向和纵向网络为分布在广阔战区内不同地域的美国陆、海、空和海军陆战队提供远程超视距且安全可靠的语音、数据、图像和视频通信，因而联合战术无线电系统（JTRS）未来有望成为美军在数字化战场中的主要通信手段。
 
@@ -62,7 +62,7 @@ footnote: true
 
 ### GMR
 
-GMR则是面向DoD（国防部）和陆军改革的核心项目，提供了联合作战的关键通信能力。GMR项目由波音公司承保。
+GMR则是面向DoD（国防部）和陆军改革的核心项目，提供了联合作战的关键通信能力。GMR项目由波音公司承包。
 
 GMR可以使用1至4个信道，支持多个安全等级，可以高效地使用2MHz ~ 2GHz的频段。此无线电兼容SCA (Software Communication Architecture)，提高了其带宽，并可以和现存的多个军用电台系统互操作。GMR支持如下Waveform【~waveform可以理解为软件定义无线电中的「软件」】
 
@@ -70,7 +70,7 @@ GMR可以使用1至4个信道，支持多个安全等级，可以高效地使用
 - SRW
 - SINCGARS
 - EPLRS
-- UHF SATCOM
+- UHF SATCOM【~SATCOM表示卫星通信】
 - HF SATCOM
 
 <img src="https://imgs.codewoody.com/uploads/big/094b1ebc36bf0fc720b1b42fb39f137c.jpg" style="width: 50%; border: none" alt="">
@@ -85,6 +85,8 @@ GMR可以使用1至4个信道，支持多个安全等级，可以高效地使用
 
 JTRS HMS (Handheld, Manpack & Small Form-Fit)，即手持，背负式即便携式的JTRS电台设备由Thales【~法国🇫🇷公司】和General Dynamic Mission Systems【~美国🇺🇸公司】联合开发。JTRS HMS用来取代[CSCHR](https://acronyms.thefreedictionary.com/CSCHR)【~Consolidated Single-Channel Handheld Radio，单信道手持设备】(PRC-148, PRC-152【~均为猎鹰系列产品】)等。JTRS HMS项目是为了满足Office of the Assistant Secretary of Defense for Network and Information Integration/DoD Chief Information Office的需求，要求就兼容SCA的软硬件。
 
+![](https://imgs.codewoody.com/uploads/big/53861d97a3411c3775c97d40a9f9e90c.png)
+
 ### MIDS JTRS
 
 MIDS 为安全，可扩展，模块化，无线，抗阻塞的数字信息系统。目前为空军，地面部队以及两栖部队提供Tactical Air Navigation (TAN), Link-16, J-Voice等通信手段。
@@ -92,6 +94,57 @@ MIDS 为安全，可扩展，模块化，无线，抗阻塞的数字信息系统
 ### AMF
 
 AMF主要是面向海空军载具和固定平台提供四信道、全双工、软件定义的无线电台。
+
+## JENM (Joint Enterprise Network Manager)
+
+### 简介
+
+[JENM](https://peoc3t.army.mil/tn/jenm.php) 为一个统一的网络规划、管理和安全相关的管理软件，应用于中间层或者底层的无线电和相关waveform的管理。JENM在JTRS中负责管理WNW(Wideband Networking Waveform)。不过JENM并未耦合到JTRS的电台设备中，作为独立软件的JENM可以部署于普通的商用电脑([source](https://www.dote.osd.mil/pub/reports/FY2012/pdf/dod/2012jtrsned.pdf))。在上面介绍[JTRS NED](http://localhost:4000/knowledge-base/military/technologies/%E7%BE%8E%E5%86%9B%E7%8E%B0%E5%BD%B9%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/JTRS.html#ned)项目时我们提到过三个Network Manger，分别是
+
+- JTRS WNW Network Manager (JWNM)
+- Soldier Radio Waveform Network Manager (SRWNM)
+- JTRS Enterprise Network Manager (JENM)
+
+三者的关系是JENM包含JWNM和SRWNM。
+
+![上图的出处是：[Joint Tactical Radio System (JTRS) Network Enterprise Domain (NED) Network Managers](https://www.dote.osd.mil/pub/reports/FY2012/pdf/dod/2012jtrsned.pdf)。提供此PDF文件的网站[https://www.dote.osd.mil/](https://www.dote.osd.mil/)的title是The Office of the Director, Operation Test and Evaluation，为美国国防部[下属部门](https://www.dote.osd.mil/about/title-10-us-code.html)](https://imgs.codewoody.com/uploads/big/cc5c68df66dc471857f09bcf133e16a9.png)
+
+JENM 可以被用来配置异质网络和waveform构成的整体网络，确保跨不同单元的网络互操作能力。其空中管理系统(eOTAM)的可以减少重新配置，管理和控制战术无线电网络需要的人工成本。
+
+JENM 还有助于将网络上下不同层级整合到统一的NetOps工具中。
+
+Joint Tactical Network Environment Network Operations Toolkit(J-TNT)将多个网络管理工具整合到一台笔记本电脑上，方便信号兵管理战术网络。J-TNT将搭载三种软件应用，包括：
+
+- JENM
+- CJSMPT (Coalition Joint Spectrum Management Planning Tool)
+- SPEED (Systems Planning Engineering and Evaluation Device)
+
+JENM 的工作能力如下：
+
+- Operates within the Integrated Tactical Networking Environment and handles the planning, configuration, monitoring, management, and analysis functions for all signal components and systems within the Joint tactical radio environment.
+- Reduces manpower hours to reconfigure, manage, and control a tactical radio network, by performing the tasks rapidly over-the-air.
+- Paves the way for the convergence of NetOps tools and management for both the Upper Tactical Internet and the Mid and Lower Tactical Internet (radio networks).
+
+### 讨论
+
+[Operationally realistic testing of network centric tactical applications in a lab environment](https://ieeexplore.ieee.org/abstract/document/6415883) 这篇文章的Section III尝试测试了JENM的性能。文章中提到：
+
+JENM负责生成RMDS(Radio Mission Data Set)配置文件，改配置文件用于配置WNW waveform。同时在waveform启动后JENM负责监控WNW网络的状态。在每个WNW电台设备上，会有网管程序的agent收集数据，并通过WNW传递给JENM（JENM需要连接到网络中的一个电台）。由于JENM本身需要依赖于战术网络来传递管理消息，因此控制管理开销增长，提高信息传输的可靠性就至关重要。
+
+上面的论文测试的尝试的是15个WNW节点组成的WNW子网。该子网是一个更大网络的一部分。
+
+<figure>
+<img src="https://imgs.codewoody.com/uploads/big/9cf2101c04d6fd82477bcfc980e75133.png" alt="" style="width: 70%" />
+<figcaption>仿真场景</figcaption>
+</figure>
+
+测试结果：
+
+<figure>
+<img src="https://imgs.codewoody.com/uploads/big/999856c040c8ffea5949b7ba7cac973a.png" alt="" style="width: 70%" />
+<img src="https://imgs.codewoody.com/uploads/big/c2eab91cd341814594781ae08fb69319.png" alt="" style="width: 70%" />
+<figcaption>测试结果</figcaption>
+</figure>
 
 ## 更多阅读
 
