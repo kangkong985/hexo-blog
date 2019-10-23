@@ -59,3 +59,4 @@ GIG 由一个名为NetOps的构造【~原词为construct，名词】来管理。
 
 - 百度百科：[全球信息栅格](https://baike.baidu.com/item/%E5%85%A8%E7%90%83%E4%BF%A1%E6%81%AF%E6%A0%85%E6%A0%BC)
 - [美军全球网络信息栅格/GIG详解](https://www.secrss.com/articles/13475)
+- [Department of Defense Global Information Grid Architectural Vision](http://www.acqnotes.com/Attachments/DoD%20GIG%20Architectural%20Vision,%20June%2007.pdf)

@@ -49,4 +49,6 @@ date: 2019-04-29 11:10:41
 
 ## [Military](./military)
 
+- [美国现役通信系统](./military/technologies/美军现役通信系统/)
+
 ## [备份集](./backups)
