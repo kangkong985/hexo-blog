@@ -11,6 +11,7 @@ date: 2019-04-29 11:10:41
 
 - [见闻(总纲)](./news)
 - [学术不端现象](./news/学术不端/)
+- [刑事案件](./news/刑事案件/2019.html)
 - [严重事故](./news/严重事故/)
 - [其他](./news/其他/2019.html)
 
@@ -50,5 +51,10 @@ date: 2019-04-29 11:10:41
 ## [Military](./military)
 
 - [美国现役通信系统](./military/technologies/美军现役通信系统/)
+    - [GIG](./military/technologies/美军现役通信系统/GIG.html)
+    - [JTRS](./military/technologies/美军现役通信系统/JTRS.html)
+    - [NetOps](./military/technologies/美军现役通信系统/NetOps.html)
+    - [WIN-T](./military/technologies/美军现役通信系统/WIN-T.html)
+    - [CANES](./military/technologies/美军现役通信系统/CANES.html)
 
 ## [备份集](./backups)
