@@ -1,5 +1,5 @@
 ---
-title: 二维马尔科夫链
+title: 二维马尔科夫链的使用
 date: 2019-07-30 21:41:12
 mathjax: true
 mathjaxext:
