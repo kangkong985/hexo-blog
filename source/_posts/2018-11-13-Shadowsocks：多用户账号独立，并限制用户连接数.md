@@ -15,7 +15,7 @@ date: 2018-11-13 16:50:23
 
 这里默认你已经知道怎么按照通常的方法安装和配置SS了。如果你不了解的话，网络上的文章很多的。
 
-## 1. 多用户的实现
+## 多用户的实现
 多用户的实现比较简单，Python和Go实现的服务器自带多用户支持。通常的配置我们一般是这么写
 ``` JSON
 {
@@ -41,7 +41,7 @@ date: 2018-11-13 16:50:23
 
 > Further Reading: [Reference](https://github.com/shadowsocks/shadowsocks/wiki/Configure-Multiple-Users)
 
-## 2. 限制用户连接
+## 限制用户连接
 
 我在网上调查了一下实现限制用户连接的方法，很多都提到了通过`iptables`来进行设置。但是这种方法太过复杂，很容易出问题。后来我找到一个ss的补丁，可以比较好的解决这个问题。补丁地址是[falssen/PySocket](https://github.com/falseen/PySocket)。
 这个工程提供了一些其他的功能，但是我们这里只关注`Limit_Clients`文件夹下的`socket.py`这个文件。这个文件的原理是利用Python包导入的机制，用自定义的`socket.py`来替换默认的`socket`包，并在`socket`接口中植入一些新的功能。
@@ -57,6 +57,11 @@ white_list = [1017]
 black_list = {1018:40}
 ```
 
-## 3. 注意
+## 注意
 
 注意方法的实质是限制接入的客户端IP数量，因此，处在同一路由器下面的多台设备也会被识别为一台。
+
+## 更多阅读
+
+- [Shadowsocks中继：从IPv4到IPv6](posts/6289/): 目前防火墙越加越高，遇到重大事件的时候，很多梯子都会挂掉。不过，有个好消息是，因为IPv6网络在国内的普及率还不高，因此IPv6还没有被特别针对。如果你有IPv6资源（一般教育网支持IPv6），可以将Shadowsocks通信从IPv4转化成IPv6再出去，会更加安全可靠一些。
+- [Shadowsocks性能优化](posts/35429/)
