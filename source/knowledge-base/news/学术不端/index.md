@@ -50,7 +50,7 @@ date: 2019-07-04 10:53:41
 >
 > Computer Science and Engineering
 
-![Dr. Haiying (Helen) Shen is an associate professor in the Department of Computer Science, the Department of Systems & Information Engineering and the Department of Electrical & Computer Engineering Department at the University of Virginia. Her research interest focuses on Distributed computing including Cloud and edge computing, Big data, Information retrieval, Content delivery networks, Cyber-physical systems, Internet of things, High performance computing, Machine learning application and Social networks. She was a recipient of the TCSC Mid-career Award 2015, IBM Faculty Award 2015, the NSF CAREER Award 2013, the Sigma Xi Clemson Chapter Young Investigator of the Year Award 2013, and the Microsoft Faculty Fellowship Award 2010. (这段bio摘自其[个人主页](http://www.cs.virginia.edu/~hs6ms/))](http://www.cs.virginia.edu/~hs6ms/me.jpg)
+![Dr. Haiying (Helen) Shen is an associate professor in the Department of Computer Science, the Department of Systems & Information Engineering and the Department of Electrical & Computer Engineering Department at the University of Virginia. Her research interest focuses on Distributed computing including Cloud and edge computing, Big data, Information retrieval, Content delivery networks, Cyber-physical systems, Internet of things, High performance computing, Machine learning application and Social networks. She was a recipient of the TCSC Mid-career Award 2015, IBM Faculty Award 2015, the NSF CAREER Award 2013, the Sigma Xi Clemson Chapter Young Investigator of the Year Award 2013, and the Microsoft Faculty Fellowship Award 2010. (这段bio摘自其[个人主页](http://www.cs.virginia.edu/~hs6ms/))。2019年11月此个人主页已经不能打开，我替换另一张图，图片来自沈海英在CLEMSON大学的[主页](http://www.clemson.edu/cecas/departments/ece/faculty_staff/faculty/hshen.html)](https://imgs.codewoody.com/uploads/big/1a473c1ed79edeeed9379730a5e6e697.jpg)
 
 但是，这里的同济的学历貌似不是正牌的同济，而是同济合并的一个学校？有点类似成人本科学历之类的：
 
@@ -62,8 +62,10 @@ date: 2019-07-04 10:53:41
 - [学术圈四大蛊王之首沈海英有人了解吗](https://www.douban.com/group/topic/146711919/?dt_dapp=1)
 - [2016年·大家还记得沈ap吗，人家跳到弗吉尼亚大学了](http://forums.huaren.us/archiver/showtopic.aspx?topicid=2063378)
 - [Haiying Shen (hs6ms) - EN-Comp Science Dept Associate Professor](https://publicsearch.people.virginia.edu/person/hs6ms): 佛吉尼亚大学中的信息
+- [沈海英在佛吉尼亚大学中的信息2](https://engineering.virginia.edu/faculty/haiying-shen)
 - [个人主页](http://www.cs.virginia.edu/~hs6ms/)
 - [北美华人e网关于相关事件的讨论帖子](http://m.huaren4us.com/Home/Topic?tid=871124&pIndex=170)
+- [Haiying Shen - Associate Professor of Electrical and Computer Engineering University](http://www.clemson.edu/cecas/departments/ece/faculty_staff/faculty/hshen.html)
 
 ### 东南·钱璐璐
 
@@ -84,7 +86,7 @@ caltech大牛winfree到上交访问认识了钱，一回美国就邀请钱到cal
 
 ![](https://imgs.codewoody.com/uploads/big/f581a621f87decbf5df0b7347e1449b8.jpg)
 
-> 其实钱璐璐的故事不算上『丑闻』的底部，也并没有明显的养蛊的现象。不过攀上了一个大牛老公，从此人生走上了Easy难度的快车道。不过放在学术圈子里来说，毕竟，面子上，这种裙带关系上位还是会引人不齿。
+> 其实钱璐璐的故事不算上『丑闻』的地步，也并没有明显的养蛊的现象。不过攀上了一个大牛老公，从此人生走上了Easy难度的快车道。不过放在学术圈子里来说，毕竟，面子上，这种裙带关系上位还是会引人不齿。
 
 ### 复旦·李敏
 
