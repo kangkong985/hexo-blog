@@ -15,11 +15,15 @@ date: 2019-04-29 11:10:41
 - [严重事故](./news/严重事故/)
 - [其他](./news/其他/2019.html)
 
+## [Collection](./collections/)
+
+收藏乱七八糟的东西，好玩就行。 
+
 ## Downloading Resources
 
 - [下载资源汇总](./resources/)
 
-## Programming
+## [Programming](./programming/)
 
 ### How to install
 
@@ -50,11 +54,13 @@ date: 2019-04-29 11:10:41
 
 ## [Military](./military)
 
-- [美国现役通信系统](./military/technologies/美军现役通信系统/)
-    - [GIG](./military/technologies/美军现役通信系统/GIG.html)
-    - [JTRS](./military/technologies/美军现役通信系统/JTRS.html)
-    - [NetOps](./military/technologies/美军现役通信系统/NetOps.html)
-    - [WIN-T](./military/technologies/美军现役通信系统/WIN-T.html)
-    - [CANES](./military/technologies/美军现役通信系统/CANES.html)
+- [军事技术](./military/technologies/)
+    - [美国现役通信系统](./military/technologies/美军现役通信系统/)
+        - [GIG](./military/technologies/美军现役通信系统/GIG.html)
+        - [JTRS](./military/technologies/美军现役通信系统/JTRS.html)
+        - [NetOps](./military/technologies/美军现役通信系统/NetOps.html)
+        - [WIN-T](./military/technologies/美军现役通信系统/WIN-T.html)
+            - [TCNO](./military/technologies/美军现役通信系统/TCNO.html)
+        - [CANES](./military/technologies/美军现役通信系统/CANES.html)
 
 ## [备份集](./backups)

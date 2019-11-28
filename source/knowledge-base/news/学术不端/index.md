@@ -3,6 +3,14 @@ title: 学术不端
 date: 2019-07-04 10:53:41
 ---
 
+## [上海药物所 - 耿美玉](https://www.zhihu.com/question/354546572/answer/885733781)
+
+近日，上海药物所耿美玉研究员的4篇论文出现在了PubPeer网站，这四篇论文被质疑存在图片不当裁剪、一图多用等问题。
+
+这四篇论文分别发表在 Oncotarget（2015年）、Journal of Cancer（2017年）、Cell（2018年）、Hepatology（2019年）。其中 Cell 和 Hepatology 论文的通讯作者为耿美玉，另外两篇论文，耿美玉研究员并非关键参与者。
+
+![](https://imgs.codewoody.com/uploads/big/354cdb3727749339d6d993c08277466e.png)
+
 ## [学术圈五大蛊王](https://www.zhihu.com/question/336719951/answer/761750649)
 
 1. 科大·黄秋原
