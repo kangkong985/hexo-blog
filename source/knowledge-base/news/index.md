@@ -3,6 +3,11 @@ title: 见闻
 date: 2019-06-26 15:39:41
 ---
 
+## 2019.11
+
+- [华为251事件](./专题/高技术人才长期羁押.html)
+- [网易暴力裁员事件](https://www.williamlong.info/archives/5898.html)
+
 ## 2019.10
 
 1. [大连 10 岁女孩疑被 13 岁男学生杀害](/knowledge-base/news/%E5%88%91%E4%BA%8B%E6%A1%88%E4%BB%B6/2019.html#%E5%A4%A7%E8%BF%9E-10-%E5%B2%81%E5%A5%B3%E5%AD%A9%E7%96%91%E8%A2%AB-13-%E5%B2%81%E7%94%B7%E5%AD%A6%E7%94%9F%E6%9D%80%E5%AE%B3)
