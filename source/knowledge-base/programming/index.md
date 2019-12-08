@@ -8,6 +8,7 @@ date: 2019-11-21 20:30:20
 ### 编程思想
 
 - [易于修改原则](https://blog.codingnow.com/2019/11/etc.html)
+- [分布式系统领域经典论文翻译集](https://zhuanlan.zhihu.com/p/91434149)
 
 ### 专业领域
 
@@ -24,6 +25,9 @@ date: 2019-11-21 20:30:20
 - [x][Swift学习数据科学指南](https://www.analyticsvidhya.com/blog/2019/10/comprehensive-guide-learn-swift-from-scratch-data-science/)
 - [Web 缓存投毒攻击](https://slate.com/technology/2019/10/y2k-2038-bug-coding-future.html)
 - [微软Azure架构设计文档](https://docs.microsoft.com/en-us/azure/architecture/)
+- [HTTP 协议基础](http://www.steves-internet-guide.com/http-basics/)
+- [MacOS, Windows, Ubuntu 性能比较](https://www.phoronix.com/scan.php?page=article&item=macos1015-win10-ubuntu&num=1)
+- [CSS 伪元素的罕见用例](https://news.ycombinator.com/item?id=21410833)
 
 ### 工具
 
@@ -32,6 +36,7 @@ date: 2019-11-21 20:30:20
 - [awesome-naming - 编程命名](https://github.com/gruhn/awesome-naming)
 - [onefetch](https://github.com/o2sh/onefetch)：这个工具可以显示Git仓库的信息
 - [SearX](https://github.com/asciimoo/searx): 开源的搜索代理
+- [加密信息写入图片工具](https://c.p2hp.com/yinxietu/)
 
 ### 有趣的网站
 
