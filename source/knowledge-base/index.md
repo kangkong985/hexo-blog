@@ -40,6 +40,7 @@ date: 2019-04-29 11:10:41
 
 - [智能交通系统](./academic/its)
 - [WLAN](./academic/wlan)
+- [通信原理](./academic/基础知识/通信原理/)
 
 ## [History](./history)
 
