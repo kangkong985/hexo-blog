@@ -28,6 +28,8 @@ date: 2019-11-21 20:30:20
 - [HTTP 协议基础](http://www.steves-internet-guide.com/http-basics/)
 - [MacOS, Windows, Ubuntu 性能比较](https://www.phoronix.com/scan.php?page=article&item=macos1015-win10-ubuntu&num=1)
 - [CSS 伪元素的罕见用例](https://news.ycombinator.com/item?id=21410833)
+- [Karatsuba算法](https://en.wikipedia.org/wiki/Karatsuba_algorithm#Example): Karatsuba 是1960年发现的一种快速相乘算法，可以大大减少大整数相乘的计算步骤。
+- [微软 REST API 设计指南](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
 
 ### 工具
 
