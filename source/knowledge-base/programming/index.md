@@ -9,6 +9,7 @@ date: 2019-11-21 20:30:20
 
 - [易于修改原则](https://blog.codingnow.com/2019/11/etc.html)
 - [分布式系统领域经典论文翻译集](https://zhuanlan.zhihu.com/p/91434149)
+- [软件架构编年史](https://www.jianshu.com/p/b477b2cc6cfa)
 
 ### 专业领域
 
@@ -30,6 +31,16 @@ date: 2019-11-21 20:30:20
 - [CSS 伪元素的罕见用例](https://news.ycombinator.com/item?id=21410833)
 - [Karatsuba算法](https://en.wikipedia.org/wiki/Karatsuba_algorithm#Example): Karatsuba 是1960年发现的一种快速相乘算法，可以大大减少大整数相乘的计算步骤。
 - [微软 REST API 设计指南](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md)
+- [H5 手机 APP 开发入门：概念篇](http://www.ruanyifeng.com/blog/2019/12/mobile-app-technology-stack.html)
+- [CSS 打印样式 10 分钟教程](https://www.paperplane.app/blog/print-css-basics/)
+- [Linux 软件包的打包方式](https://www.ibm.com/developerworks/cn/linux/l-lo-rpm-build-package/index.html)
+- [实时协同编辑的实现](https://yafeilee.com/blogs/100)
+- [一组文章：Vue源码分析](https://nlrx-wjc.github.io/Learn-Vue-Source-Code/start/)
+- [机器学习的数据集](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
+- [油管视频：Animated Login Form Using HTML & CSS & JQuery](https://www.youtube.com/watch?v=ZvU57lTnNgo)
+- [如何撤销 Git 操作](http://www.ruanyifeng.com/blog/2019/12/git-undo.html)
+- [Google 工程时间文档](https://github.com/xindoo/eng-practices-cn)
+- [网站后台爆破工具: WebCrack](https://zhuanlan.zhihu.com/p/89205738)
 
 ### 工具
 
@@ -39,6 +50,7 @@ date: 2019-11-21 20:30:20
 - [onefetch](https://github.com/o2sh/onefetch)：这个工具可以显示Git仓库的信息
 - [SearX](https://github.com/asciimoo/searx): 开源的搜索代理
 - [加密信息写入图片工具](https://c.p2hp.com/yinxietu/)
+- [Bash 脚本如何创建临时文件：mktemp 命令和 trap 命令教程](http://www.ruanyifeng.com/blog/2019/12/mktemp.html)
 
 ### 有趣的网站
 
