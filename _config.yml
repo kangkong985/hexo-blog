@@ -95,7 +95,7 @@ search:
 pandoc:
   extra:
     - bibliography: ./source/_reference.bib
-    - csl: ./source/_IEEEtran.cls
+    - csl: ./source/_IEEETran.cls
   filters:
     - pandoc-crossref
     - pandoc-citeproc
