@@ -51,6 +51,8 @@ date: 2019-11-21 20:30:20
 - [SearX](https://github.com/asciimoo/searx): 开源的搜索代理
 - [加密信息写入图片工具](https://c.p2hp.com/yinxietu/)
 - [Bash 脚本如何创建临时文件：mktemp 命令和 trap 命令教程](http://www.ruanyifeng.com/blog/2019/12/mktemp.html)
+- [docker-slim](https://github.com/docker-slim/docker-slim): Docker 镜像瘦身工具。
+- [FFmpeg入门教程](http://www.ruanyifeng.com/blog/2020/01/ffmpeg.html)
 
 ### 有趣的网站
 
