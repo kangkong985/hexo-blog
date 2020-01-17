@@ -58,3 +58,4 @@ date: 2019-11-21 20:30:20
 
 - [Bruno Simon](https://bruno-simon.com/): 一个全3D的个人主页，酷毙了。
 - [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)
+- [Website for Students](https://websiteforstudents.com/): 一个提供了很多关于 Linux, Windows 和 CMS 的教程的网站。

@@ -36,6 +36,7 @@ apt-get install -y nodejs
 ### yarn global 安装的工具命令不可用的问题
 
 这是因为yarn global安装的路径不在环境变量 PATH 里面。将下面的内容添加到shell配置里面就可以了。
+
 ```shell
 export PATH="$PATH:$(yarn global bin)"
 ```
